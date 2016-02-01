@@ -20,5 +20,6 @@ shinyServer(function(input, output) {
         data <- mutate(data, Transmission = ifelse(Transmission==0, "Automatic", "Manual"))
         data <- arrange(data, GasolineExpenditure)
         data
-    }, options = list(lengthMenu = c(5, 15, 30), pageLength = 30))
+    },
+    options = list(lengthMenu = c(5, 15, 30), pageLength = 30))
 })
